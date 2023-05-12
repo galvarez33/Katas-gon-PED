@@ -2,4 +2,4 @@
 class SumaDosNumeros:
 
     def suma(a, b):
-       return 5 
+       return a + b 

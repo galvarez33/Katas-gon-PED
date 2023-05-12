@@ -56,6 +56,9 @@ def test_perimetro_negativo():
         assert True
 
 def test_ejecutar_programa_que_muestre_area_y_perimetro():
-    r = Rectangulo(2, 3)
+    altura = 2
+    base = 3
+    r = Rectangulo(altura, base)
     r.ejecutar()
     assert True
+

@@ -17,14 +17,15 @@ class Rectangulo:
             return self.a *2 + self.b * 2 
     
     def ejecutar(self):
-        a = float(input("Ingrese el valor de la base: "))
-        b = float(input("Ingrese el valor de la altura: "))
-        self.a = a
-        self.b = b
-
-        print("Área:", self.area())
-        print("Perímetro:", self.perimetro())
+         print("Área:", self.area())
+         print("Perímetro:", self.perimetro())
     
 if __name__ == "__main__":
-    r = Rectangulo(0, 0)
+    try:
+        base = int(input("Ingrese el valor de la base: "))
+        altura = int(input("Ingrese el valor de la altura: "))
+    except ValueError:
+        raise ValueError("Debe introducir un entero válido")
+
+    r = Rectangulo( base, altura)
     r.ejecutar()

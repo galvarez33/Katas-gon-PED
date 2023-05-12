@@ -31,3 +31,10 @@ def test_suma_recursiva3():
 
     assert resultado_esperado == resultado
 
+def test_valor_no_entero():
+    sumador = SumaRecursiva(3.25)
+    try:
+        sumador.suma_recursiva()
+        assert False, "se esperaba que fallase"
+    except ValueError:
+        assert True

@@ -12,7 +12,7 @@ class SumaDosNumeros:
 
 
     def suma(a, b):
-        if not es_entero(a,b):
+        if not SumaDosNumeros.es_entero(a,b):
            raise ValueError("Valor no valido")
 
         a = float(a)

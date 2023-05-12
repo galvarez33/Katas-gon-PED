@@ -30,3 +30,9 @@ def test_suma_numeros_negativos():
     b = -3
     resultado = SumaDosNumeros.suma(a, b)
     assert resultado == -5
+
+def test_suma_dos_numeros_decimales():
+    a = 12.5
+    b = 7.5
+    resultado = SumaDosNumeros.suma(a,b)
+    assert resultado == 20

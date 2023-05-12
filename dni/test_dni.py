@@ -16,3 +16,16 @@ def test_longitud_erronea():
         assert False, "No deberia pasar"
     except ValueError:
         assert True
+
+def test_validar_formato():
+    dni = "12345678N"
+    obj = Dni(dni)
+    assert obj.validar_formato() == True
+
+def test_formato_letra_erroneo():
+    dni = "12345678"
+    try:
+        Dni(dni).validar_formato()
+        assert False, "No deberia pasar"
+    except SyntaxError:
+        assert True

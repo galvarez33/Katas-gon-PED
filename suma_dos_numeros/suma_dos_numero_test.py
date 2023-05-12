@@ -6,3 +6,12 @@ def test_suma_dos_numeros():
     b = 3
     resultado = SumaDosNumeros.suma(a, b)
     assert resultado == 5
+
+def test_suma_dos_numeros_a_erroneo():
+    a = "hola"
+    b = 3
+    try:
+        SumaDosNumeros.suma(a,b)
+        assert False, "Se esperaba excepcion"
+    except ValueError:
+        assert True

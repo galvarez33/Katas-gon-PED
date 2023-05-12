@@ -5,4 +5,4 @@ class Rectangulo:
         self.b = b
 
     def area(self):
-        return 4
+        return self.a * self.b

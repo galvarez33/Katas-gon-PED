@@ -15,3 +15,16 @@ class Rectangulo:
             raise ValueError("No puede ser negativo")
         else:
             return self.a *2 + self.b * 2 
+    
+    def ejecutar(self):
+        a = float(input("Ingrese el valor de la base: "))
+        b = float(input("Ingrese el valor de la altura: "))
+        self.a = a
+        self.b = b
+
+        print("Área:", self.area())
+        print("Perímetro:", self.perimetro())
+    
+if __name__ == "__main__":
+    r = Rectangulo(0, 0)
+    r.ejecutar()

@@ -40,13 +40,13 @@ def test_calcular_area_con_negativo():
         assert True
 
 def test_calcular_perimetro():
-    assert Rectangulo(2,3).perimetro() == 10
+    assert Rectangulo(2, 3).perimetro() == 10
 
 def test_calcular_perimetro():
-    assert Rectangulo(3,4).perimetro() == 14
+    assert Rectangulo(3, 4).perimetro() == 14
 
 def test_calcular_perimetro():
-    assert Rectangulo(1,2).perimetro() == 6
+    assert Rectangulo(1, 2).perimetro() == 6
 
 def test_perimetro_negativo():
     try:
@@ -54,3 +54,8 @@ def test_perimetro_negativo():
         assert False,"debe fallar"
     except ValueError:
         assert True
+
+def test_ejecutar_programa_que_muestre_area_y_perimetro():
+    r = Rectangulo(2, 3)
+    r.ejecutar()
+    assert True

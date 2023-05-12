@@ -29,3 +29,12 @@ def test_calcular_area3():
     b = 3
     r = Rectangulo(a,b).area()
     assert r == 9
+
+def test_calcular_area_con_negativo():
+    a = -3
+    b = 3
+    try:
+        Rectangulo(a,b).area()
+        assert False, "Debe fallar"
+    except ValueError:
+        assert True

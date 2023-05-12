@@ -5,4 +5,7 @@ class Rectangulo:
         self.b = b
 
     def area(self):
-        return self.a * self.b
+        if self.a <= 0 or self.b <= 0:
+            raise ValueError("No puede ser negativo")
+        else:
+            return self.a * self.b

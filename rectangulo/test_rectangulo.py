@@ -43,4 +43,7 @@ def test_calcular_perimetro():
     assert Rectangulo(2,3).perimetro() == 10
 
 def test_calcular_perimetro():
-    assert Rectangulo(3,3).perimetro() == 12
+    assert Rectangulo(3,4).perimetro() == 14
+
+def test_calcular_perimetro():
+    assert Rectangulo(1,2).perimetro() == 6

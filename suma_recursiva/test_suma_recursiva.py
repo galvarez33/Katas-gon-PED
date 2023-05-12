@@ -15,3 +15,11 @@ def test_suma_recursiva():
 
     assert resultado_esperado == resultado
 
+def test_suma_recursiva2():
+    n = 6
+    resultado_esperado = 21 #1+2+3+4+5+6
+    sumador = SumaRecursiva(n)
+    resultado = sumador.suma_recursiva()
+
+    assert resultado_esperado == resultado
+

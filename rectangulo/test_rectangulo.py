@@ -41,3 +41,6 @@ def test_calcular_area_con_negativo():
 
 def test_calcular_perimetro():
     assert Rectangulo(2,3).perimetro() == 10
+
+def test_calcular_perimetro():
+    assert Rectangulo(3,3).perimetro() == 12

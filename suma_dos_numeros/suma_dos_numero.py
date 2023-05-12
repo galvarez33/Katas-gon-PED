@@ -1,6 +1,7 @@
 
 class SumaDosNumeros:
-
+    def __init__(self,a,b):
+       self.a = a
 
     def es_entero(a,b):
        try:

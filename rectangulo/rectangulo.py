@@ -11,4 +11,7 @@ class Rectangulo:
             return self.a * self.b
     
     def perimetro(self):
-        return self.a *2 + self.b * 2 
+        if self.a <= 0 or self.b <= 0:
+            raise ValueError("No puede ser negativo")
+        else:
+            return self.a *2 + self.b * 2 

@@ -47,3 +47,10 @@ def test_calcular_perimetro():
 
 def test_calcular_perimetro():
     assert Rectangulo(1,2).perimetro() == 6
+
+def test_perimetro_negativo():
+    try:
+        Rectangulo(-2,1).perimetro()
+        assert False,"debe fallar"
+    except ValueError:
+        assert True

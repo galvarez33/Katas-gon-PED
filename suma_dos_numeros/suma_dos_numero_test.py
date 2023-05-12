@@ -15,3 +15,12 @@ def test_suma_dos_numeros_a_erroneo():
         assert False, "Se esperaba excepcion"
     except ValueError:
         assert True
+
+def test_suma_dos_numeros_b_erroneo():
+    a = 2
+    b = "hola"
+    try:
+        SumaDosNumeros.suma(a,b)
+        assert False, "Se esperaba excepcion"
+    except ValueError:
+        assert True

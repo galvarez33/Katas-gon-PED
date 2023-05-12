@@ -5,4 +5,7 @@ class SumaRecursiva:
         self.valor = valor
     
     def suma_recursiva(self):
-       return 15
+        if self.valor == 0:
+            return 0
+        else:
+            return self.valor + SumaRecursiva(self.valor -1).suma_recursiva()

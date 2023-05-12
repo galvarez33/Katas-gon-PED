@@ -11,3 +11,9 @@ def test_constructor_base():
     b = 2
     r = Rectangulo(a, b)
     assert r.b == b
+
+def test_calcular_area():
+    a = 2
+    b = 2
+    r = Rectangulo(a,b).area()
+    assert r == 4

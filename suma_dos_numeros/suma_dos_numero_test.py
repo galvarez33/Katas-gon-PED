@@ -2,10 +2,7 @@ from suma_dos_numero import SumaDosNumeros
 
 
 def test_suma_dos_numeros():
-    a = 2
-    b = 3
-    resultado = SumaDosNumeros.suma(a, b)
-    assert resultado == 5
+    assert SumaDosNumeros.suma(2, 3) == 5
 
 def test_suma_dos_numeros_a_erroneo():
     a = "hola"
@@ -26,13 +23,8 @@ def test_suma_dos_numeros_b_erroneo():
         assert True
 
 def test_suma_numeros_negativos():
-    a = -2
-    b = -3
-    resultado = SumaDosNumeros.suma(a, b)
-    assert resultado == -5
+    assert SumaDosNumeros.suma(-2, -3) == -5
 
 def test_suma_dos_numeros_decimales():
-    a = 12.5
-    b = 7.5
-    resultado = SumaDosNumeros.suma(a,b)
-    assert resultado == 20
+    assert SumaDosNumeros.suma(12.5, 7.5) == 20
+   

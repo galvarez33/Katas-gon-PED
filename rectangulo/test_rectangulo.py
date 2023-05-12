@@ -17,3 +17,9 @@ def test_calcular_area():
     b = 2
     r = Rectangulo(a,b).area()
     assert r == 4
+
+def test_calcular_area2():
+    a = 3
+    b = 2
+    r = Rectangulo(a,b).area()
+    assert r == 6

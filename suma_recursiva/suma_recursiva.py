@@ -4,7 +4,13 @@ class SumaRecursiva:
     def __init__(self, valor):
         self.valor = valor
     
+    def validacion(self):
+        if not isinstance(self.valor, int):
+            raise ValueError("El valor no es un entero")
+
+
     def suma_recursiva(self):
+        self.validacion()
         if self.valor == 0:
             return 0
         else:

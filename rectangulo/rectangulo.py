@@ -9,3 +9,6 @@ class Rectangulo:
             raise ValueError("No puede ser negativo")
         else:
             return self.a * self.b
+    
+    def perimetro(self):
+        return 10

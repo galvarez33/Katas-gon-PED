@@ -38,3 +38,6 @@ def test_calcular_area_con_negativo():
         assert False, "Debe fallar"
     except ValueError:
         assert True
+
+def test_calcular_perimetro():
+    assert Rectangulo(2,3).perimetro() == 10

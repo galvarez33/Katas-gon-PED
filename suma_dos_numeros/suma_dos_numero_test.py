@@ -24,3 +24,9 @@ def test_suma_dos_numeros_b_erroneo():
         assert False, "Se esperaba excepcion"
     except ValueError:
         assert True
+
+def test_suma_numeros_negativos():
+    a = -2
+    b = -3
+    resultado = SumaDosNumeros.suma(a, b)
+    assert resultado == -5

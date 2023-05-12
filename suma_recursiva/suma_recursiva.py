@@ -7,6 +7,8 @@ class SumaRecursiva:
     def validacion(self):
         if not isinstance(self.valor, int):
             raise ValueError("El valor no es un entero")
+        if self.valor < 0:
+            raise ValueError("El valor es negativo")
 
 
     def suma_recursiva(self):

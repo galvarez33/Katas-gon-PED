@@ -38,3 +38,11 @@ def test_valor_no_entero():
         assert False, "se esperaba que fallase"
     except ValueError:
         assert True
+
+def test_valor_entero_negativo():
+    sumador = SumaRecursiva(-4)
+    try:
+        sumador.suma_recursiva()
+        assert False, "se esperaba que fallase"
+    except ValueError:
+        assert True

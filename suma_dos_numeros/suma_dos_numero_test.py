@@ -27,4 +27,10 @@ def test_suma_numeros_negativos():
 
 def test_suma_dos_numeros_decimales():
     assert SumaDosNumeros.suma(12.5, 7.5) == 20
+
+def test_guarda_primer_valor():
+    a = 1
+    b = 2
+    resultado = SumaDosNumeros(a,b)
+    assert resultado.a == a
    

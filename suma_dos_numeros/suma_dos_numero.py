@@ -2,11 +2,13 @@
 class SumaDosNumeros:
     def __init__(self,a,b):
        self.a = a
+       self.b = b
 
-    def es_entero(a,b):
+
+    def es_entero(self, a, b):
        try:
-          float(a)
-          float(b)
+          float(self.a)
+          float(self.b)
           return True
        except:
           return False

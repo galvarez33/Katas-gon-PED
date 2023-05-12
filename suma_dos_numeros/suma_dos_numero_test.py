@@ -33,4 +33,10 @@ def test_guarda_primer_valor():
     b = 2
     resultado = SumaDosNumeros(a,b)
     assert resultado.a == a
+
+def test_guarda_segundo_valor():
+    a = 1
+    b = 2
+    resultado = SumaDosNumeros(a,b)
+    assert resultado.b == b
    

@@ -100,6 +100,13 @@ def test_calcular_perimetro():
     area = obj.calcular_perimetro()
     assert area == 6
 
+def test_calcular_perimetro():
+    punto1 = (1,1)
+    punto2 = (4,2)
+    obj = Rectangulo(punto1, punto2)
+    area = obj.calcular_perimetro()
+    assert area == 8
+
 
 
 

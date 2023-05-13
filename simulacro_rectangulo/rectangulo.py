@@ -7,6 +7,15 @@ class Rectangulo:
         else:
             raise ValueError("Formato de punto incorrecto")
 
+    def crear_puntos(self):
+        punto3 = (self.punto2[0], self.punto1[1])
+        punto4 = (self.punto1[0], self.punto2[1])
+        return punto3, punto4
+    
     def crear_rectangulo(self):
-        #punto3 = (self.punto2[0], self.punto1[1])
-        return (3,1)
+        punto3, punto4 = self.crear_puntos()
+        l = [self.punto1,self.punto2, punto3, punto4]
+        return l
+    
+        
+        

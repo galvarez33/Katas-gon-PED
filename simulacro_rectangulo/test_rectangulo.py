@@ -107,6 +107,23 @@ def test_calcular_perimetro():
     area = obj.calcular_perimetro()
     assert area == 8
 
+def test_rectangulo_con_linea_horizontal():
+    punto1 = (1, 1)
+    punto2 = (4, 1)
+    try:
+        obj = Rectangulo(punto1, punto2).crear_puntos()
+        assert False  
+    except ValueError:
+        assert True  
+
+def test_rectangulo_con_linea_vertical():
+    punto1 = (1, 1)
+    punto2 = (1, 4)
+    try:
+        obj = Rectangulo(punto1, punto2).crear_puntos()
+        assert False  
+    except ValueError:
+        assert True  
 
 
 

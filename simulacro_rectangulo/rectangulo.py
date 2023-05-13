@@ -26,6 +26,8 @@ class Rectangulo:
         area = base * altura
         return area 
     
+    def calcular_perimetro(self):
+        return 6
     
     
         

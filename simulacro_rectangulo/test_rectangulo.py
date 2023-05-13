@@ -93,6 +93,13 @@ def test_caso_p1_mayor_que_p2():
     area = obj.calcular_area()
     assert area == 2
 
+def test_calcular_perimetro():
+    punto1 = (0,0)
+    punto2 = (2,1)
+    obj = Rectangulo(punto1, punto2)
+    area = obj.calcular_perimetro()
+    assert area == 6
+
 
 
 

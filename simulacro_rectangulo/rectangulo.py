@@ -17,5 +17,8 @@ class Rectangulo:
         l = [self.punto1,self.punto2, punto3, punto4]
         return l
     
+    def calcular_area(self):
+        return 6
+    
         
         

@@ -8,7 +8,7 @@ class Dni:
         if len(self.dni) == 9:
             return len(self.dni)
         else:
-            raise ValueError("Longitud erronea") 
+            raise ValueError("\nLongitud erronea") 
         
     def validar_formato(self):
         ultimo_caracter = self.dni[-1]
@@ -19,10 +19,10 @@ class Dni:
             if es_numero:
                 return True
             else:
-                raise SyntaxError("est edni no tiene letr al final")
+                raise SyntaxError("\n este dni no tiene 8 numeros, ERROR\n")
 
         else:
-            raise SyntaxError("est edni no tiene letr al final")
+            raise SyntaxError("\neste dni no tiene letra al final, ERROR\n")
         
 
     def validar_calculo(self):
@@ -30,14 +30,20 @@ class Dni:
         resto = int(self.dni[:8]) % 23
         letra = l[resto]
         dni_final = f"{self.dni[:8]}{letra}"
+        if dni_final == self.dni :
+            print(f"El DNI {dni_final} ES VÁLIDOOO")
+            return dni_final
+        print(f"\nEse dni no es correcto, el correspondiente seria: {dni_final}")
         return dni_final
     
 
     
 
 if __name__ == "__main__":
-    entrada = input("Introduzca un dni 8 Numeros y 1 LETRA: ")
+    entrada = input("\nIntroduzca un dni 8 Numeros y 1 LETRA: ")
     dni = Dni(entrada)
+    dni.validar_long()
+    dni.validar_formato()
     dni.validar_calculo()
        
 

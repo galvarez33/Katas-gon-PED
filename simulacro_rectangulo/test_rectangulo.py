@@ -56,6 +56,13 @@ def test_area_rectangulo():
     area = obj.calcular_area()
     assert area == 6
 
+def test_area_rectangulo():
+    punto1 = (1, 1)
+    punto2 = (2, 3)
+    obj = Rectangulo(punto1, punto2)
+    area = obj.calcular_area()
+    assert area == 2
+
 
 
 

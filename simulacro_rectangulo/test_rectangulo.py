@@ -125,6 +125,16 @@ def test_rectangulo_con_linea_vertical():
     except ValueError:
         assert True  
 
+def test_rectangulos_se_intersectan():
+    punto1_r1 = (1, 1)
+    punto2_r1 = (4, 3)
+    rectangulo1 = Rectangulo(punto1_r1, punto2_r1)
+
+    punto1_r2 = (2, 2)
+    punto2_r2 = (5, 4)
+    rectangulo2 = Rectangulo(punto1_r2, punto2_r2)
+
+    assert rectangulo1.intersecta_con(rectangulo2)
 
 
 

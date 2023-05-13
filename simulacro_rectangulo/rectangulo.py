@@ -30,6 +30,16 @@ class Rectangulo:
         perimetro = (self.punto2[0]- self.punto1[0])*2 + (self.punto2[1]- self.punto1[1])*2
         return perimetro
     
+    def intersecta_con(self, otro_rectangulo):
+
+        x3, y3 = otro_rectangulo.punto1
+        x4, y4 = otro_rectangulo.punto2
+
+        if (self.punto2[0] < x3 or x4 < self.punto1[0]) or (self.punto2[1] < y3 or y4 < self.punto1[1]):
+            return False  
+        else:
+            return True 
+    
     
         
         

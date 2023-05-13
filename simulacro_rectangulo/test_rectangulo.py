@@ -12,7 +12,7 @@ def test_guarda_punto2():
     obj = Rectangulo(punto1, punto2)
     assert obj.punto2 == punto2
 
-def test_punt1_debe_ser_tupla():
+def test_punto1_debe_ser_tupla():
     punto1 = (3)
     punto2 = (2,3)
     try:
@@ -22,3 +22,12 @@ def test_punt1_debe_ser_tupla():
     except ValueError:
         assert True
 
+def test_punto2_debe_ser_tupla():
+    punto1 = (3,2)
+    punto2 = (2)
+    try:
+        obj = Rectangulo(punto1, punto2)
+        isinstance(obj.punto2, tuple)
+        assert False
+    except ValueError:
+        assert True

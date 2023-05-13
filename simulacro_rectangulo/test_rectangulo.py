@@ -77,6 +77,14 @@ def test_area_rectangulo_decimales():
     area = obj.calcular_area()
     assert area == 4.0
 
+def test_caso_error_p1_p2_iguales():
+    punto1 = (1,1)
+    punto2 = (1,1)
+    try:
+        obj = Rectangulo(punto1,punto2).crear_puntos()
+        assert False
+    except ValueError:
+        assert True 
 
 
 

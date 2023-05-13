@@ -32,11 +32,19 @@ def test_punto2_debe_ser_tupla():
     except ValueError:
         assert True
 
-def test_crear_rectangulo1():
+def test_crear_p3_rectangulo():
     punto1 = (1,1)
     punto2 = (3,2)
     obj = Rectangulo(punto1, punto2)
     p3 =(3,1)
    
-
     assert obj.crear_rectangulo() == (p3)
+
+def test_crear_p4_rectangulo():
+    punto1 = (1,1)
+    punto2 = (3,2)
+    obj = Rectangulo(punto1, punto2)
+    p4 =(1,2)
+   
+
+    assert obj.crear_rectangulo() == (p4)

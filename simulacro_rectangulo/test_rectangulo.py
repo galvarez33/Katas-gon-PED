@@ -86,6 +86,13 @@ def test_caso_error_p1_p2_iguales():
     except ValueError:
         assert True 
 
+def test_caso_p1_mayor_que_p2():
+    punto1 = (2,1)
+    punto2 = (0,0)
+    obj = Rectangulo(punto1, punto2)
+    area = obj.calcular_area()
+    assert area == 2
+
 
 
 

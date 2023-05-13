@@ -27,7 +27,8 @@ class Rectangulo:
         return area 
     
     def calcular_perimetro(self):
-        return 6
+        perimetro = (self.punto2[0]- self.punto1[0])*2 + (self.punto2[1]- self.punto1[1])*2
+        return perimetro
     
     
         

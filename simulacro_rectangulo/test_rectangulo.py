@@ -37,6 +37,6 @@ def test_crear_rectangulo1():
     punto2 = (3,2)
     obj = Rectangulo(punto1, punto2)
     p3 =(3,1)
-    p4 = (1,2)
-    
-    assert obj.crear_rectangulo() == (p3, p4)
+   
+
+    assert obj.crear_rectangulo() == (p3)

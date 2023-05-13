@@ -70,6 +70,14 @@ def test_area_rectangulo_negaitvo():
     area = obj.calcular_area()
     assert area == 2
 
+def test_area_rectangulo_decimales():
+    punto1 = (1.5, 2.5)
+    punto2 = (3.5, 4.5)
+    obj = Rectangulo(punto1, punto2)
+    area = obj.calcular_area()
+    assert area == 4.0
+
+
 
 
 

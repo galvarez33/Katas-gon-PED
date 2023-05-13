@@ -42,12 +42,23 @@ def test_crear_p3_y_p4_rectangulo():
    
     assert obj.crear_puntos() == (p3, p4)
 
-    def test_guarda_puntos_lista():
-        punto1 = (1,1)
-        punto2 = (3,2)
+def test_guarda_puntos_lista():
+    punto1 = (1,1)
+    punto2 = (3,2)
+    obj = Rectangulo(punto1, punto2)
+    puntos = obj.crear_rectangulo()
+    assert puntos == [(1,1),(3,2),(3,1),(1,2)]
+
+def test_puntos_enteros():
+    punto1 = (1, 1)
+    punto2 = (2.5, 3)  
+    try:
         obj = Rectangulo(punto1, punto2)
-        puntos = obj.crear_rectangulo()
-        assert puntos == [(1,1),(3,2),(3,1),(1,2)]
+        assert False, "no puede fallar"
+    except ValueError:
+        assert True  
+
+
 
 
 

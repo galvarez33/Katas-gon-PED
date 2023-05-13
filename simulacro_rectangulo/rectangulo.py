@@ -7,4 +7,5 @@ class Rectangulo:
         else:
             raise ValueError("Formato de punto incorrecto")
 
-    
+    def crear_rectangulo(self):
+        pass

@@ -49,14 +49,12 @@ def test_guarda_puntos_lista():
     puntos = obj.crear_rectangulo()
     assert puntos == [(1,1),(3,2),(3,1),(1,2)]
 
-def test_puntos_enteros():
+def test_area_rectangulo():
     punto1 = (1, 1)
-    punto2 = (2.5, 3)  
-    try:
-        obj = Rectangulo(punto1, punto2)
-        assert False, "no puede fallar"
-    except ValueError:
-        assert True  
+    punto2 = (3, 4)
+    obj = Rectangulo(punto1, punto2)
+    area = obj.calcular_area()
+    assert area == 6
 
 
 

@@ -38,6 +38,7 @@ class Rectangulo:
         if (self.punto2[0] < x3 or x4 < self.punto1[0]) or (self.punto2[1] < y3 or y4 < self.punto1[1]):
             return False  
         else:
+            print("El rectangulo se intersecta")
             return True 
     
     

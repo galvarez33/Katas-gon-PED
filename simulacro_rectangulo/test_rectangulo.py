@@ -134,7 +134,14 @@ def test_rectangulos_se_intersectan():
     punto2_r2 = (5, 4)
     rectangulo2 = Rectangulo(punto1_r2, punto2_r2)
 
-    assert rectangulo1.intersecta_con(rectangulo2)
+    assert rectangulo1.intersecta_con(rectangulo2) == True
+
+def test_rectangulos_no_se_intersectan():
+    rectangulo1 = Rectangulo((1, 1), (3, 4))
+    rectangulo2 = Rectangulo((5, 5), (7, 8))
+
+    assert rectangulo1.intersecta_con(rectangulo2) == False
+
 
 
 
